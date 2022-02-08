@@ -24,7 +24,7 @@ export default function StudentList({ setStudentUID, setopenStudentProfile }) {
   // console.log("HEsd", students);
   return (
     <>
-      <Typography align="center" variant="h5" gutterBottom component="div">
+      <Typography align="center" variant="h5" gutterBottom component="div" my={5}>
         STUDENT LIST
       </Typography>
 

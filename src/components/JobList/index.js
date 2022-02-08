@@ -22,7 +22,7 @@ export default function JobList({ setJobPostID, setopenJobApplicants }) {
 
   return (
     <>
-      <Typography align="center" variant="h5" gutterBottom component="div">
+      <Typography align="center" variant="h5" gutterBottom component="div" my={5}>
         JOB LIST
       </Typography>
 

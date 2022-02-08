@@ -7,7 +7,7 @@ import { Stack } from "@mui/material";
 import { Card } from "@material-ui/core";
 import "./index.css";
 import Test from "../../components/test";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/layouts/Navbar";
 import TPORegistrationForm from "../../components/TPORegistrationForm";
 import FacultyRegistrationForm from "../../components/FacultyRegistrationForm";
 import StudentProfile from "../../components/StudentProfile";
@@ -29,9 +29,9 @@ const ViewPage = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
 
-      <Grid container>
+      <Grid container sx={{mx: "1rem", my: "4rem"}}>
         <Grid item sm={4}>
           <div className="b">
             <Buttons

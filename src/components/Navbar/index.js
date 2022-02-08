@@ -30,18 +30,21 @@ const Navbar = () => {
   return (
     <>
       <Appbar>
-        <Toolbar>
+      <Toolbar style={{display: "flex",alignItems: "center",justifyContent: "space-between"}}>
+          <div style={{display: "flex",alignItems: "center",justifyContent: "space-between"}}>
+
           <img src="../../images/acharya_logo.png" alt="logo" />
 
           <Typography>PLACEMENT CELL</Typography>
-          <Typography style={{ marginLeft: "1000px" }}>Hi Faculty!</Typography>
+          </div>
           {matches ? (
             <DrawerComponent
               openDrawer={openDrawer}
               setOpenDrawer={setOpenDrawer}
             />
           ) : (
-            <Box style={{ marginLeft: "auto" }}>
+            <Box style={{ display: "flex",alignItems: "center",justifyContent: "space-between",width: "200px" }}>
+              <Typography style={{ marginLeft: "1000px" }}>Hi Faculty!</Typography>
               <Button
                 color="inherit"
                 className="button"
